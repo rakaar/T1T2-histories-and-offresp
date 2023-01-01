@@ -23,3 +23,6 @@
 ## Rates at all segs for diff re BF FOR 6 gaps
 - `rates_at_all_gaps_all_segs.m`. [fig link](https://docs.google.com/presentation/d/1zJoRmZoUCOLryYLfXrH_zukrs5qWYhDNqqFSGp6yEzQ/edit?usp=sharing)
 
+- `analyse_for_each_stim_rates_vs_rebf.m` - for 4 stim at 6 segments, a matrix of rates(re Bf vs gap values[60 90 110 130 150 280]). [fig link](https://docs.google.com/presentation/d/1zJoRmZoUCOLryYLfXrH_zukrs5qWYhDNqqFSGp6yEzQ/edit?usp=sharing)
+
+  
