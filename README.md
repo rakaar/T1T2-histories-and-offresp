@@ -20,4 +20,6 @@
 
 - analysis code to make figures - rate at re BF at different gaps and different histories - `analyse_re_bf_rates.m`. Corresponding [figures link](https://docs.google.com/presentation/d/1YnXIZMT2-KRMjQ2-RVSNqCC7NJES12hL4gnLnyynIrI/edit?usp=sharing) 
 
+## Rates at all segs for diff re BF FOR 6 gaps
+- `rates_at_all_gaps_all_segs.m`. [fig link](https://docs.google.com/presentation/d/1zJoRmZoUCOLryYLfXrH_zukrs5qWYhDNqqFSGp6yEzQ/edit?usp=sharing)
 
