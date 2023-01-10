@@ -121,13 +121,14 @@ for s=1:4
     figure
         for seg=1:6
             subplot(3,3,seg)
-            imagesc(squeeze(nanmean_stim_seg_rebf_gaps(s,seg,:,:))*1000.')
+            imagesc(squeeze(nanmean_stim_seg_rebf_gaps(s,seg,:,:))*1000)
             title(strcat('seg-',num2str(seg)))
-            colorbar()
-            caxis([0 15])
+            legend('60', '90','110','130','150','280')
+%             colorbar()
+%             caxis([0 7])
         end
     title(strcat('stim-',num2str(s)))
-    saveas(gcf, strcat( num2str(s),'.png' ))
+%     saveas(gcf, strcat( 'plot-',num2str(s),'.fig' ))
     grid
     
 end
