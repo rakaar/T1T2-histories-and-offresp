@@ -25,4 +25,4 @@
 
 - `analyse_for_each_stim_rates_vs_rebf.m` - for 4 stim at 6 segments, a matrix of rates(re Bf vs gap values[60 90 110 130 150 280]). [fig link](https://docs.google.com/presentation/d/1zJoRmZoUCOLryYLfXrH_zukrs5qWYhDNqqFSGp6yEzQ/edit?usp=sharing)
 
-  
+- `analyse_selectivity_for_diff_histories.m` - selectivity for diff his at 3rd token,gap, 2nd gap[figs link](https://docs.google.com/presentation/d/12y3N6amyAyX6TuqJEe1N-tQFLjZtqNft4zvEkIRmBEE/edit?usp=sharing)
