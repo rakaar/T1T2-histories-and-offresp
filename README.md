@@ -26,3 +26,10 @@
 - `analyse_for_each_stim_rates_vs_rebf.m` - for 4 stim at 6 segments, a matrix of rates(re Bf vs gap values[60 90 110 130 150 280]). [fig link](https://docs.google.com/presentation/d/1zJoRmZoUCOLryYLfXrH_zukrs5qWYhDNqqFSGp6yEzQ/edit?usp=sharing)
 
 - `analyse_selectivity_for_diff_histories.m` - selectivity for diff his at 3rd token,gap, 2nd gap[figs link](https://docs.google.com/presentation/d/12y3N6amyAyX6TuqJEe1N-tQFLjZtqNft4zvEkIRmBEE/edit?usp=sharing)
+- `analyse_rate_diff_not_csi_sigs.m` - checking for ttests in rate diff not csi 
+- `analyse_csi_non_csi_in_diff_crit.m` - checking in 3rd token and gap, critieria now include if only in those kind of stimuli, unlike in previous case - any of 16 stimuli
+
+
+## finding new ways to normalise
+- [figures link](https://docs.google.com/presentation/d/16pLty-wtrfaWQSE81f6MRinhQQu0JCNSKB68gciDQsM/edit?usp=sharing)
+- `finding_new_ways_to_norm.m`
