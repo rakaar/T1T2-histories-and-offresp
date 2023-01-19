@@ -2023,10 +2023,10 @@ gap_values = [60 90 110 130 150 280];
 stim_seg_rebf_gaps = cell(4,6,13,6);
 
 
-stim1 = [3 2];
+stim1 = [2 3];
 stim2 = [1 4];
 
-stim1_like = [9:12 5:8];
+stim1_like = [5:8 9:12];
 stim2_like = [1:4 13:16];
 
 
@@ -2042,7 +2042,7 @@ for u=1:299
     end
 
     % sig check
-    sig_vals = rates_and_sig{u,3};
+    sig_vals = rates_and_sig{u,5};
     sig_vals = reshape(sig_vals(stim_like,1:3), numel(sig_vals(stim_like,1:3)),1);
     sig_mean = nanmean(sig_vals);
     if sig_mean == 0
@@ -2083,7 +2083,7 @@ for u=1:299
     end
 
     % sig check
-    sig_vals = rates_and_sig{u,3};
+    sig_vals = rates_and_sig{u,5};
     sig_vals = reshape(sig_vals(stim_like,1:3), numel(sig_vals(stim_like,1:3)),1);
     sig_mean = nanmean(sig_vals);
     if sig_mean == 0
@@ -2113,7 +2113,7 @@ for u=1:299
 
 end % end of u
 
-seg = 3;
+seg = 6;
 hc_responses = cell(13,6);
 for stim=stim1
     for re=1:13
@@ -2138,6 +2138,7 @@ for re=1:13
             hc_res = hc_responses{re,g};
             tone_res = tone_responses{re,g};
 
+            % csi to non-csi conversion
 %             csi_units{re,g} = (hc_res - tone_res)./(hc_res + tone_res);
                         csi_units{re,g} = (hc_res - tone_res);
     end

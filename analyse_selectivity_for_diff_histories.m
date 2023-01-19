@@ -2303,9 +2303,11 @@ grid
 % seg 6, combined t and hc
 close all
 seg = 6;
+stim1 = [1];
+stim2 = [4];
 
 hc_responses = cell(13,6);
-for stim=[2 3]
+for stim=stim1
     for re=1:13
         for g=1:6
                 hc_responses{re,g} = [hc_responses{re,g}; stim_seg_rebf_gaps{stim,seg,re,g}];
@@ -2314,7 +2316,7 @@ for stim=[2 3]
 end
 
 tone_responses = cell(13,6);
-for stim=[1 4]
+for stim=stim2
     for re=1:13
         for g=1:6
                     tone_responses{re,g} = [tone_responses{re,g}; stim_seg_rebf_gaps{stim,seg,re,g}];
@@ -2328,7 +2330,8 @@ for re=1:13
             hc_res = hc_responses{re,g};
             tone_res = tone_responses{re,g};
 
-            csi_units{re,g} = (hc_res - tone_res)./(hc_res + tone_res);
+            csi_units{re,g} = (hc_res - tone_res);
+%             csi_units{re,g} = (hc_res - tone_res)./(hc_res + tone_res);
     end
 end
 
@@ -2385,7 +2388,7 @@ figure
    hold off
 
 
-    title(strcat('seg-', num2str(seg)))
+    title(strcat(string(stim1),'-vs-',string(stim2),'-seg-', num2str(seg)))
 grid
 
 
@@ -2436,6 +2439,6 @@ figure
    hold off
 
 
-    title(strcat('seg-', num2str(seg)))
+    title(strcat(string(stim1),'-vs-',string(stim2),'-seg-', num2str(seg)))
 grid
 

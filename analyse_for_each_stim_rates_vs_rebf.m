@@ -28,7 +28,7 @@ for u=1:299
     end
 
     % sig check
-    sig_vals = rates_and_sig{u,3};
+    sig_vals = rates_and_sig{u,5};
     sig_vals = reshape(sig_vals(:,1:3), 48,1);
     sig_mean = nanmean(sig_vals);
     if sig_mean == 0
@@ -69,7 +69,7 @@ for u=1:299
     end
 
     % sig check
-    sig_vals = rates_and_sig{u,3};
+    sig_vals = rates_and_sig{u,5};
     sig_vals = reshape(sig_vals(:,1:3), 48,1);
     sig_mean = nanmean(sig_vals);
     if sig_mean == 0
