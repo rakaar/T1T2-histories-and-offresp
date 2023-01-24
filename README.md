@@ -34,3 +34,6 @@
 - [figures link](https://docs.google.com/presentation/d/16pLty-wtrfaWQSE81f6MRinhQQu0JCNSKB68gciDQsM/edit?usp=sharing)
 - `finding_new_ways_to_norm.m`
 - `analyse_csi_diffs_using_rates_norm_using_tone_and_hc_rate` - rates normalised using tone and harominc rates
+
+## unit wise analysis 
+- `analyse_units_wise` - bootstrap, generate chance and actual csi, compare confidence interval. Results in doc.
