@@ -28,12 +28,16 @@ for u=1:299
     end
 
     % sig check
-    sig_vals = rates_and_sig{u,5};
-    sig_vals = reshape(sig_vals(:,1:3), 48,1);
-    sig_mean = nanmean(sig_vals);
-    if sig_mean == 0
+%     sig_vals = rates_and_sig{u,3};
+%     sig_vals = reshape(sig_vals(:,1:3), 48,1);
+%     sig_mean = nanmean(sig_vals);
+    if rates_and_sig{u,4} == 0
         continue
     end
+       % as ber bf 26
+%       if rates_and_sig{u,10} == 0
+%           continue
+%       end
 
     if ismember(rates_and_bf{u,20}, freqs) && ismember(rates_and_bf{u,19}, freqs)
         octaves_apart = (find(freqs == rates_and_bf{u,20}) - find(freqs == rates_and_bf{u,19}))*0.5;
@@ -57,7 +61,7 @@ for u=1:299
     end % end of s
 
 end % end of u
-
+disp('set 1')
 %% set 2
 gaps = [90 110 130 150 90 110 130 150 90 110 130 150 90 110 130 150];
 rates_and_sig = set2_rates_and_sig;
@@ -69,12 +73,16 @@ for u=1:299
     end
 
     % sig check
-    sig_vals = rates_and_sig{u,5};
-    sig_vals = reshape(sig_vals(:,1:3), 48,1);
-    sig_mean = nanmean(sig_vals);
-    if sig_mean == 0
-        continue
-    end
+    %     sig_vals = rates_and_sig{u,5};
+    %     sig_vals = reshape(sig_vals(:,1:3), 48,1);
+    %     sig_mean = nanmean(sig_vals);
+        if rates_and_sig{u,4} == 0
+            continue
+        end
+    % as per bf 26
+%     if rates_and_sig{u,10} == 0
+%       continue
+%     end
 
     if ismember(rates_and_bf{u,20}, freqs) && ismember(rates_and_bf{u,19}, freqs)
         octaves_apart = (find(freqs == rates_and_bf{u,20}) - find(freqs == rates_and_bf{u,19}))*0.5;

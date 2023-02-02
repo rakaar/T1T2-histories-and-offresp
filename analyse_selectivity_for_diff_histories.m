@@ -2303,8 +2303,9 @@ grid
 % seg 6, combined t and hc
 close all
 seg = 6;
-stim1 = [1];
-stim2 = [4];
+is_csi = 0;
+stim1 = [2 3];
+stim2 = [1 4];
 
 hc_responses = cell(13,6);
 for stim=stim1
@@ -2329,9 +2330,11 @@ for re=1:13
     for g=1:6
             hc_res = hc_responses{re,g};
             tone_res = tone_responses{re,g};
-
-            csi_units{re,g} = (hc_res - tone_res);
-%             csi_units{re,g} = (hc_res - tone_res)./(hc_res + tone_res);
+            if is_csi == 1
+                csi_units{re,g} = (hc_res - tone_res)./(hc_res + tone_res);
+            else
+                csi_units{re,g} = (hc_res - tone_res);
+            end
     end
 end
 

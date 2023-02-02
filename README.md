@@ -37,3 +37,7 @@
 
 ## unit wise analysis 
 - `analyse_units_wise` - bootstrap, generate chance and actual csi, compare confidence interval. Results in doc.
+- `analyse_units_wise_ttests` - unit wise ttests
+
+## rates vs gaps checking
+- `rates_vs_gaps_anova.m` - anova tests across gap values. to run it u require `nanmean_stim_seg_rebf_gaps` created in the file - `analyse_for_each_stim_rates_vs_rebf.m`
